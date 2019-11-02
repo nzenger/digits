@@ -1,0 +1,9 @@
+.background {
+  background-image: url('/images/calc.jpg');
+  background-size: cover;
+}
+
+
+Menu{
+  background-color: #2185D0;
+}
