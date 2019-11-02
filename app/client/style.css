@@ -1,0 +1,12 @@
+.background{
+  background-image: url("\images\calc.jpg");
+  background-size: cover;
+}
+
+h1{
+  color: white !important;
+}
+
+p{
+  color: white !important;
+}
