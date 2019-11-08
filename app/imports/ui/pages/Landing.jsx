@@ -1,38 +1,39 @@
 import React from 'react';
-import { Grid } from 'semantic-ui-react';
-import Icon from 'semantic-ui-react/dist/commonjs/elements/Icon';
+import { Grid, Header, Icon } from 'semantic-ui-react';
 
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
   render() {
     return (
-        <div className="background">
-        <Grid columns={3} verticalAlign='top' textAlign='center' container>
+        <div className='digits-background'>
+          <Grid container centered stackable columns={3}>
+            <Grid.Column textAlign='center'>
+              <Icon inverted size='huge' name='users'/>
+              <Header inverted as='h1'>Multiple Users</Header>
+              <Header inverted as='h3'>This address book enables any
+              number of users to register and save
+              their business contacts. You can only
+              see the contacts you have created.</Header>
+            </Grid.Column>
 
-          <Grid.Column width={4} textAlign='center'>
-            <Icon name='inverted users' size='huge'/>
-            <h1><font color="white">Multiple Users</font></h1>
-            <h5 className="ui header"><font color="white">This address book enables any number of users to register and
-              save their business contacts.
-              You can only see the contacts you have created.</font></h5>
-          </Grid.Column>
+            <Grid.Column textAlign='center'>
+              <Icon inverted size='huge' name='file alternate'/>
+              <Header inverted as='h1'>Contact Details</Header>
+              <Header inverted as='h3'>For each contact, you can save their
+                name, address, and phone number.</Header>
+            </Grid.Column>
 
-          <Grid.Column width={4} textAlign='center'>
-            <Icon name='inverted file alternate outline' size='huge'/>
-            <h1><font color="white">Contact Details</font></h1>
-            <h5 className="ui header"><font color="white">For each contact, you can save their name, address,
-              and phone number.</font></h5>
-          </Grid.Column>
+            <Grid.Column textAlign='center'>
+              <Icon inverted size='huge' name='calendar check outline'/>
+              <Header inverted as='h1'>Timestamped Notes</Header>
+              <Header inverted as='h3'>Each time you make contact with a
+                contact, you can write a note that
+                summarizes the conversation. This
+                note is saved along with a
+                timestamp with the contact.</Header>
+            </Grid.Column>
 
-          <Grid.Column width={4} textAlign='center'>
-            <Icon name='inverted calendar check outline' size='huge'/>
-            <h1><font color="white">Timestamped Notes</font></h1>
-            <h5 className="ui header"><font color="white">Each time you make contact with a contact, you can write a
-              note that summarizes the conversation.
-              This note is saved along with a timestamp with the contact.</font></h5>
-          </Grid.Column>
-
-        </Grid>
+          </Grid>
         </div>
     );
   }

@@ -6,17 +6,18 @@ import { Tracker } from 'meteor/tracker';
 const Contacts = new Mongo.Collection('Contacts');
 
 /** Define a schema to specify the structure of each document in the collection. */
-const ContactsSchema = new SimpleSchema({
+const ContactSchema = new SimpleSchema({
   firstName: String,
   lastName: String,
   address: String,
   image: String,
   description: String,
   owner: String,
+
 }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */
-Contacts.attachSchema(ContactsSchema);
+Contacts.attachSchema(ContactSchema);
 
 /** Make the collection and schema available to other code. */
-export { Contacts, ContactsSchema };
+export { Contacts, ContactSchema };

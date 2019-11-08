@@ -1,9 +1,4 @@
-.background {
-  background-image: url('/images/calc.jpg');
+.digits-background{
+  background: url("images/digits-header.jpg") no-repeat center center fixed;
   background-size: cover;
-}
-
-
-Menu{
-  background-color: #2185D0;
 }

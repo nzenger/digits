@@ -36,12 +36,13 @@
       "condition": "excellent"
     }
   ],
+
   "defaultContacts": [
     {
       "firstName": "Philip",
       "lastName": "Johnson",
       "address": "POST 307, University of Hawaii",
-      "image": "https://philipmjohnson.github.io/'image's/philip2.jpeg",
+      "image": "https://philipmjohnson.github.io/images/philip2.jpeg",
       "description": "I am a Professor of Information and Computer Sciences at the University of Hawaii, Director of the Collaborative Software Development Laboratory, and the CEO of OpenPowerQuality.com.",
       "owner": "john@foo.com"
     },
@@ -57,8 +58,8 @@
       "firstName": "Kim",
       "lastName": "Binsted",
       "address": "POST 307, University of Hawaii",
-      "image": "https://pbs.twimg.com/profile_'image's/798636728852434944/Y2EMD2i5_400x400.jpg",
-      "description": "Kim Binsted received her BSc in Physics at McGill (1991), and her PhD in Artificial Intelligence from the University of Edinburgh (1996). Her thesis topic was the computational modeling and generation of punning riddles, and her program, JAPE (Joke Analysis and Production Engine), generated puns such as 'What do you call a Martian who drinks beer? An ale-ien!'.",
+      "image": "https://pbs.twimg.com/profile_images/798636728852434944/Y2EMD2i5_400x400.jpg",
+      "description": "Kim Binsted received her BSc in Physics at McGill (1991), and her PhD in Artificial Intelligence from the University of Edinburgh (1996). Her thesis topic was the computational modeling and generation of  punning riddles, and her program, JAPE (Joke Analysis and Production Engine), generated puns such as 'What do you call a Martian who drinks beer? An ale-ien!'.",
       "owner": "admin@foo.com"
     }
   ]

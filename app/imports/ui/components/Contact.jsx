@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card ,Image} from 'semantic-ui-react';
+import { Card, Image } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 
@@ -7,7 +7,7 @@ import { withRouter } from 'react-router-dom';
 class Contact extends React.Component {
   render() {
     return (
-        <Card>
+        <Card centered>
           <Card.Content>
             <Image
                 floated='right'

@@ -7,7 +7,7 @@ import { withRouter } from 'react-router-dom';
 class ContactAdmin extends React.Component {
   render() {
     return (
-        <Card>
+        <Card centered>
           <Card.Content>
             <Image
                 floated='right'
@@ -20,9 +20,9 @@ class ContactAdmin extends React.Component {
               {this.props.contact.description}
             </Card.Description>
           </Card.Content>
-        <Card.Content>
-          {this.props.contact.owner}
-        </Card.Content>
+          <Card.Content extra>
+            {this.props.contact.owner}
+          </Card.Content>
         </Card>
     );
   }

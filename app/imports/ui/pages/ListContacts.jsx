@@ -1,10 +1,10 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Card, Header, Loader } from 'semantic-ui-react';
-import { Contacts } from '/imports/api/contact/Contacts';
+import { Container, Header, Loader, Card } from 'semantic-ui-react';
 import Contact from '/imports/ui/components/Contact';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
+import { Contacts } from '/imports/api/contact/Contacts';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class ListContacts extends React.Component {
@@ -19,7 +19,7 @@ class ListContacts extends React.Component {
     return (
         <Container>
           <Header as="h2" textAlign="center" inverted>List Contacts</Header>
-          <Card.Group centered>
+          <Card.Group>
             {this.props.contacts.map((contact, index) => <Contact key={index} contact={contact}/>)}
           </Card.Group>
         </Container>
