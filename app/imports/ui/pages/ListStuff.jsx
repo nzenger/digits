@@ -5,6 +5,7 @@ import { Stuffs } from '/imports/api/stuff/Stuff';
 import StuffItem from '/imports/ui/components/StuffItem';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
+import { Notes } from '../../api/note/Notes';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class ListStuff extends React.Component {
@@ -40,6 +41,7 @@ class ListStuff extends React.Component {
 /** Require an array of Stuff documents in the props. */
 ListStuff.propTypes = {
   stuffs: PropTypes.array.isRequired,
+  notes: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };
 
@@ -47,8 +49,10 @@ ListStuff.propTypes = {
 export default withTracker(() => {
   // Get access to Stuff documents.
   const subscription = Meteor.subscribe('Stuff');
+  const subscription2 = Meteor.subscribe('Notes');
   return {
     stuffs: Stuffs.find({}).fetch(),
-    ready: subscription.ready(),
+    notes: Notes.find({}),
+    ready: subscription.ready() && subscription2.ready(),
   };
 })(ListStuff);
