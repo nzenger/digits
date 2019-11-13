@@ -1,7 +1,7 @@
-**Digits
+**Digits**
 <img src="doc/landing.png">
 
-Install:
+**Install:**
 
 1.Clone the "digits" repository to your GitHub Desktop
 
@@ -11,7 +11,7 @@ Install:
 
 4.Run "meteor npm run start" and then go to "http://localhost:3000/" to see website
 
-Pages:
+**Pages:**
 
 -Landing Page:
 First page you visit when entering the website and provides general information about the website and its functions.
